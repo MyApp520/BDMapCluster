@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_people_header"
+        android:layout_width="66dp"
+        android:layout_height="66dp" />
+
+    <TextView
+        android:id="@+id/tv_people_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_alignEnd="@+id/image_people_header"
+        android:padding="2dp"
+        android:text="1"
+        android:textColor="#fff"
+        android:textSize="13sp" />
+
+</RelativeLayout>

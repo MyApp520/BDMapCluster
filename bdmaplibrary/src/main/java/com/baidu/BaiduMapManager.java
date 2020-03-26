@@ -227,7 +227,7 @@ public class BaiduMapManager {
      * 把两个经纬度，分段切割成数个小点
      *
      * @param startLatlng 起点
-     * @param endLatlng 终点
+     * @param endLatlng   终点
      */
     private List<LatLng> cuttingLatLng(LatLng startLatlng, LatLng endLatlng) {
         final Double a_x = startLatlng.latitude;
@@ -258,6 +258,7 @@ public class BaiduMapManager {
 
     /**
      * 判断某个经纬度的位置是否显示在屏幕可视范围之外
+     *
      * @param baiduMap
      * @param latLng
      * @return
@@ -277,9 +278,10 @@ public class BaiduMapManager {
 
     /**
      * 判断某个点是否在由startLatlng和endLatlng组成的区域范围内
+     *
      * @param startLatlng
      * @param endLatlng
-     * @param point 待判定的那个点
+     * @param point       待判定的那个点
      * @return
      */
     public boolean isPolygonContainsPoint(LatLng startLatlng, LatLng endLatlng, LatLng point) {
@@ -292,8 +294,13 @@ public class BaiduMapManager {
         return false;
     }
 
+    /**
+     * 地图缩放层级比例尺对应的距离
+     *
+     * @return
+     */
     public HashMap<Integer, Integer> initMapZoomScale() {
-        HashMap<Integer, Integer> mapZoomScale = new HashMap<>();// 地图缩放层级比例尺对应的距离
+        HashMap<Integer, Integer> mapZoomScale = new HashMap<>();
         mapZoomScale.put(3, 2000000);
         mapZoomScale.put(4, 1000000);
         mapZoomScale.put(5, 500000);

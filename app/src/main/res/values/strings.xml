@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">BDMapCluster</string>
+
+    <string name="gpsNotifyMsg">当前应用需要打开定位功能。\n\n请点击\"设置\"-\"定位服务\"-打开定位功能。</string>
+    <string name="exit_sure">确认</string>
+    <string name="exit_cancle">取消</string>
+    <string name="exit_rebuild">确认并重建</string>
+    <string name="exit_setting">设置</string>
+    <string name="warm_tip">温馨提示：</string>
+    <string name="please_wait">请稍等</string>
+    <string name="exit">退出</string>
+
 </resources>
