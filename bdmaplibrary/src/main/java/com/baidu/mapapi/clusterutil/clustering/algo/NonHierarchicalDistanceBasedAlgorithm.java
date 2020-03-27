@@ -93,8 +93,8 @@ public class NonHierarchicalDistanceBasedAlgorithm<T extends ClusterItem> implem
         final Set<QuadItem<T>> visitedCandidates = new HashSet<QuadItem<T>>();
         final Set<Cluster<T>> results = new HashSet<Cluster<T>>();
         final Map<QuadItem<T>, Double> distanceToCluster = new HashMap<QuadItem<T>, Double>();
-        final Map<QuadItem<T>, com.baidu.mapapi.clusterutil.clustering.algo.StaticCluster<T>> itemToCluster =
-                new HashMap<QuadItem<T>, com.baidu.mapapi.clusterutil.clustering.algo.StaticCluster<T>>();
+        final Map<QuadItem<T>, StaticCluster<T>> itemToCluster =
+                new HashMap<QuadItem<T>, StaticCluster<T>>();
 
         synchronized (mQuadTree) {
             for (QuadItem<T> candidate : mItems) {
