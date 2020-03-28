@@ -2,6 +2,7 @@ package mapcluster.smile.com.bdmapcluster.model.response;
 
 import android.text.TextUtils;
 
+import com.baidu.mapapi.model.LatLng;
 import com.chad.library.adapter.base.entity.MultiItemEntity;
 
 import java.io.Serializable;
@@ -176,6 +177,7 @@ public class GetAlarmListResponse implements Serializable {
             private String name;
             private Object cameraCode;
             private String status;
+            private LatLng baiDuLatLng;
 
             /**
              * 1-按人员聚合展示(按对象)； 2-按时间展示；
@@ -432,6 +434,19 @@ public class GetAlarmListResponse implements Serializable {
             @Override
             public int getItemType() {
                 return itemType;
+            }
+
+            public void setBaiDuLatLng(LatLng baiDuLatLng) {
+                this.baiDuLatLng = baiDuLatLng;
+            }
+
+            /**
+             * 百度地图坐标
+             *
+             * @return
+             */
+            public LatLng getBaiDuLatLng() {
+                return baiDuLatLng;
             }
         }
     }

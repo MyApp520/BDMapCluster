@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-    <ImageView
+    <mapcluster.smile.com.bdmapcluster.widget.circle_imageview.SWImageView
         android:id="@+id/image_people_header"
-        android:layout_width="66dp"
-        android:layout_height="66dp" />
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/check_banner_bg"
+        app:borderColor="@color/color_last_marker"
+        app:borderWidth="1dp"
+        app:type="circle" />
 
-    <TextView
+    <mapcluster.smile.com.bdmapcluster.widget.badge_view.BadgeViewPro
         android:id="@+id/tv_people_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:layout_alignEnd="@+id/image_people_header"
-        android:padding="2dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/color_marker_count_text"
         android:text="1"
-        android:textColor="#fff"
-        android:textSize="13sp" />
-
-</RelativeLayout>
+        android:textColor="@color/color_white"
+        android:textSize="12sp"
+        app:shape_type="0" />
+</FrameLayout>

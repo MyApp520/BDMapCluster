@@ -3,4 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="color_white">#ffffff</color>
+
+    <color name="color_first_marker">#4CAF50</color>
+    <color name="color_period_marker">#4783E2</color>
+    <color name="color_last_marker">#FF3B30</color>
+    <color name="color_marker_line">#FF3B30</color>
+    <color name="color_marker_count_text">#FF3B30</color>
 </resources>
